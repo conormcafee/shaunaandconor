@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Shauna & Conor</title>
+  </head>
+  <style>
+    .bg {
+      margin: 0;
+      padding: 0;
+      background-image: url("redcastle.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top: 4px solid #f17f6d;
+    }
+
+    .bg:after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.5)
+      );
+    }
+
+    img {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+  <body class="bg">
+    <img src="icon.png" />
+  </body>
+</html>
