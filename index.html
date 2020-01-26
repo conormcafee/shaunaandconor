@@ -1,15 +1,12 @@
 <html>
   <head>
     <title>Shauna & Conor</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:500|Raleway:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body class="[ bg-gray-900 ][ font-sc ]">
-    <header class="[ border-t-8 border-sc ][ fixed right-0 left-0 ][ z-20 ]">
+  <body class="[ bg-gray-900 text-white ][ font-sc ][ relative ][ antialiased ]">
+    <header class="[ border-t-8 border-sc ][ absolute right-0 left-0 ][ z-20 ]">
       <div
         class="[ flex flex-col sm:flex-row items-center justify-between ][ py-4 px-2 ][ container mx-auto ]"
       >
@@ -22,41 +19,272 @@
           class="[ flex items-center justify-center sm:justify-end ][ font-medium ][ w-full ]"
         >
           <a
-            href="#"
-            class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-0 sm:ml-2"
+            href="#directions"
+            class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-0 sm:ml-4"
             >Directions</a
           >
           <a
-            href="#"
-            class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-2"
-            ><span class="hidden sm:inline-block">Wedding</span> List</a
+            href="#accommodation"
+            class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-4"
+            >Accomodation</a
           >
           <a
-            href="#"
-            class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-2"
-            >Accomodation</a
+            href="#weddinglist"
+            class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-4"
+            ><span class="hidden sm:inline-block">Wedding</span> List</a
           >
         </nav>
       </div>
     </header>
     <section
-      class="[ flex flex-col items-center justify-center ][ h-screen relative ][ bg-overlay bg-cover bg-no-repeat ]"
+      class="[ h-screen relative ][ bg-overlay bg-cover bg-no-repeat ]"
       style="background-image: url('assets/redcastle.jpg');"
     >
-      <div class="[ container mx-auto px-8 ][ text-white ]">
-        <div class="[ h-full ][ relative z-10 ]">
-          <figure>
-            <img
-              src="assets/shauna-and-conor.png"
-              alt="Shauna & Conor"
-              class="md:max-w-3xl mx-auto"
-            />
-            <figcaption class="font-medium uppercase tracking-wide text-center">
-              Saturday 21st March 2020
-            </figcaption>
-          </figure>
-        </div>
+      <div
+        class="[ container mx-auto px-8 ][ flex flex-col items-center justify-center ][ text-white ][ flex-1 h-full ][ relative z-10 ]"
+      >
+        <figure>
+          <img
+            src="assets/shauna-and-conor.png"
+            alt="Shauna & Conor"
+            class="md:max-w-3xl mx-auto"
+          />
+          <figcaption class="font-medium uppercase tracking-wide text-center">
+            Saturday 21st March 2020
+          </figcaption>
+        </figure>
       </div>
     </section>
+    
+    <!-- Introduction -->
+
+    <section class="[ container mx-auto px-8 pb-16 ]">
+      <div class="[ sm:flex ][ -mx-4 ]">
+        <article class="[ flex flex-col sm:items-end flex-1 ][ px-4 mb-10 sm:mb-0 ][ sm:text-right ]">
+          <p class="max-w-sm mb-4">
+            Our wedding venue is in the picturesque Redcastle Oceanfront Golf &
+            Spa Hotel, Moville, Co. Donegal. We hope you will love it as much as
+            we do.</p>
+            
+            <p class="max-w-sm mb-4">We have decided to put together this website to give you and
+            insight into the final details of our special day. We hope that this
+            will make your planning a little easier.</p>
+          </p>
+        </article>
+        <aside class="flex-1 px-4">
+          <ul>
+            <li class="flex mb-4">
+              <img src="assets/svg/ring.svg" alt="Ceremony at 12 noon, St.Trea’s Church, Newbridge" />
+              <div class="flex flex-col ml-4">
+                <span class="font-medium">12 noon</span>
+                <span class="text-sm">Ceremony, St.Trea’s Church, Newbridge</span>
+              </div>
+            </li>
+
+            <li class="flex mb-4">
+              <img src="assets/svg/drinks.svg" alt="Drinks Reception at 3pm in the Redcastle Hotel" />
+              <div class="flex flex-col ml-4">
+                <span class="font-medium">3pm</span>
+                <span class="text-sm">Drinks Reception at the Redcastle Hotel</span>
+              </div>
+            </li>
+            
+            <li class="flex mb-4">
+              <img src="assets/svg/speeches.svg" alt="Speeches at 5pm" />
+              <div class="flex flex-col ml-4">
+                <span class="font-medium">5pm</span>
+                <span class="text-sm">Speeches</span>
+              </div>
+            </li>
+
+            <li class="flex mb-4">
+              <img src="assets/svg/menu.svg" alt="Dinner at 5.30pm" />
+              <div class="flex flex-col ml-4">
+                <span class="font-medium">5.30pm</span>
+                <span class="text-sm">Dinner</span>
+              </div>
+            </li>
+            
+            <li class="flex mb-4">
+              <img src="assets/svg/married.svg" alt="Mr and Mrs McCann’s first dance at 8pm" />
+              <div class="flex flex-col ml-4">
+                <span class="font-medium">8pm</span>
+                <span class="text-sm">Mr and Mrs McCann’s first dance</span>
+              </div>
+            </li>
+            
+            <li class="flex mb-4">
+              <img src="assets/svg/music.svg" alt="The party begins at 8.30pm" />
+              <div class="flex flex-col ml-4">
+                <span class="font-medium">8.30pm</span>
+                <span class="text-sm">The party begins</span>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Directions -->
+
+    <section id="directions" class="[ container mx-auto px-8 pb-16 ]">
+      <div class="[ md:flex ][ -mx-4 ]">
+        <article class="[ flex flex-col flex-1 ][ px-4 mb-10 sm:mb-0 ]">
+          <h2 class="font-sc-heading font-medium text-3xl mb-4">Directions</h2>
+          <p class="max-w-sm mb-4">
+            Our wedding ceremony will take place in St.Trea’s Church, Newbridge, Co Derry. <a target="_blank" class="text-sc hover:bg-sc hover:text-white border-b-2 border-sc" href="https://www.google.com/maps/place/St.+Treas+Chapel/@54.7528283,-6.528001,15z/data=!4m2!3m1!1s0x0:0xd943744aaa0c0c25?sa=X&ved=2ahUKEwiftqSz9JvnAhXxRxUIHQhQCsoQ_BIwFnoECAoQCA">Click here for directions</a></p>
+            
+            <p class="max-w-sm mb-4">Then our reception is being held in the Redcastle Hotel, Moville, Co. Donegal (15 minutes outside Derry City). <a target="_blank" class="text-sc hover:bg-sc hover:text-white border-b-2 border-sc" href="https://www.google.com/maps/dir/133,+St.+Treas+Chapel,+137+Aughrim+Rd,+Magherafelt+BT45+8HB/Redcastle+Hotel,+Inishowen+Peninusla,+Redcastle,+County+Donegal,+Ireland/@54.9566573,-7.1963717,10z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x48605ae54ea8c3cd:0xd943744aaa0c0c25!2m2!1d-6.528001!2d54.7528283!1m5!1m1!1s0x485f0714d2f07703:0x746358babccb62b2!2m2!1d-7.122708!2d55.1587991">Click here for directions</a> to Redcastle Hotel from Newbridge Chapel. We ask that you go straight to the reception once the mass is over as we will have drinks and some light food on arrival.</p>
+          </p>
+        </article>
+        <aside class="flex-1 px-4">
+          <a target="_blank" class="block relative w-full aspect-square rounded-lg shadow bg-cover bg-no-repeat mb-16 md:mb-0" style="background-image: url('assets/chapel.jpg');" href="https://www.google.com/maps/place/St.+Treas+Chapel/@54.7528283,-6.528001,15z/data=!4m2!3m1!1s0x0:0xd943744aaa0c0c25?sa=X&ved=2ahUKEwiftqSz9JvnAhXxRxUIHQhQCsoQ_BIwFnoECAoQCA">
+            <span class="absolute top-0 right-0 p-4 text-right font-bold">St.Trea’s Church<span class="text-sm block font-medium">Click for Directions</span></span>
+          </a>
+          <a target="_blank" class="block relative w-full aspect-square rounded-lg shadow bg-cover bg-no-repeat shift-image" style="background-image: url('assets/redcastle.jpg');" href="https://www.google.com/maps/dir/133,+St.+Treas+Chapel,+137+Aughrim+Rd,+Magherafelt+BT45+8HB/Redcastle+Hotel,+Inishowen+Peninusla,+Redcastle,+County+Donegal,+Ireland/@54.9566573,-7.1963717,10z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x48605ae54ea8c3cd:0xd943744aaa0c0c25!2m2!1d-6.528001!2d54.7528283!1m5!1m1!1s0x485f0714d2f07703:0x746358babccb62b2!2m2!1d-7.122708!2d55.1587991">
+            <span class="absolute top-0 right-0 p-4 text-right font-bold">Redcastle Hotel<span class="text-sm block font-medium">Click for Directions</span></span>
+          </a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Accomodation -->
+
+    <section id="accommodation" class="[ container mx-auto px-8 pb-16 ]">
+      <div class="[ md:flex ][ -mx-4 ]">
+        <article class="[ flex flex-col flex-1 ][ px-4 mb-10 sm:mb-0 ]">
+          <h2 class="font-sc-heading font-medium text-3xl mb-4">Accommodation</h2>
+          <p class="max-w-sm mb-4">
+            For those wishing to stay over at the reception, the Redcastle is a 4 star hotel resort and has over 90 rooms, a restaurant, swimming pool, spa and golf course. To book a room for the night of the wedding, you can <a target="_blank" class="text-sc hover:bg-sc hover:text-white border-b-2 border-sc" href="https://www.redcastlehoteldonegal.com/">book directly on their website</a> or using <a target="_blank" class="text-sc hover:bg-sc hover:text-white border-b-2 border-sc" href="https://www.booking.com/hotel/ie/carlton-redcastle.en-gb.html?aid=311076;label=hotel-40265-ie-%2AI1%2ABMYS30i9I2Z2%2A1o2IAS392916376709%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-39717232980%3Alp9045206%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YX-SVbABBf1_TwNC0YE2R9c;sid=b0e45d2f6608c3c0c76bbb7954bafd0f;all_sr_blocks=4026505_184336755_0_2_0;checkin=2020-03-21;checkout=2020-03-22;dest_id=-1504685;dest_type=city;dist=0;from_beach_key_ufi_sr=1;group_adults=2;group_children=0;hapos=1;highlighted_blocks=4026505_184336755_0_2_0;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=4026505_184336755_0_2_0__12960;srepoch=1579858429;srpvid=68de433eadd20074;type=total;ucfs=1&#hotelTmpl">booking.com</a>.
+          </p>
+          <p class="max-w-sm">For anyone searching for their own accommodation to stay over, we have also combined a list of local accommodation which should be helpful.</p>
+        </article>
+        <aside class="flex-1 px-4">
+          <!-- Accom Start -->
+          <div class="bg-gray-800 p-4 rounded-lg mb-8">
+            <header class="flex items-center justify-between">
+              <h4 class="font-bold">Cherrytree House</h4>
+              <div class="flex">
+                <a target="_" href="tel:+00353749383540"><img src="assets/svg/phone.svg" class="h-8 w-auto" alt="Phone to Book" /></a>
+                <a class="ml-4" target="_" href="https://www.booking.com/hotel/ie/cherrytree-house-b-amp-b.en-gb.html?aid=356930&label=metagha-link-localuniversalGB-hotel-2856396_dev-desktop_los-1_bw-57_dow-Saturday_defdate-0_room-0_lang-en_curr-GBP_gstadt-2_rateid-0_aud-0_cid-_gacid-6623578758_mcid-10&sid=376da4c5711e5380aaff34a4749e0641&all_sr_blocks=285639601_206437190_2_1_0&checkin=2020-03-21&checkout=2020-03-22&dest_id=-1504685&dest_type=city&from_beach_key_ufi_sr=1&group_adults=2&group_children=0&hapos=1&highlighted_blocks=285639601_206437190_2_1_0&hpos=1&no_rooms=1&sr_order=popularity&sr_pri_blocks=285639601_206437190_2_1_0__8000&srepoch=1579856156&srpvid=0a9f3ecdb3030074&ucfs=1&from=searchresults;highlight_room=#hotelTmpl"><img src="assets/svg/info.svg" class="h-8 w-auto" alt="Go on Online to Book" /></a>
+              </div>
+            </header>
+            <p class="text-sm mb-4">B&B only 5 mins away</p>
+
+            <div class="text-sm">
+              Cherry Tree House, Calbry, Quigleys Point, Co Donegal, Moville, Ireland
+            </div>
+          </div>
+          <!-- Accom End -->
+          <!-- Accom Start -->
+          <div class="bg-gray-800 p-4 rounded-lg mb-8">
+            <header class="flex items-center justify-between">
+              <h4 class="font-bold">The Point Inn</h4>
+              <div class="flex">
+                <a target="_" href="tel:00353749315420"><img src="assets/svg/phone.svg" class="h-8 w-auto" alt="Phone to Book" /></a>
+                <a class="ml-4"target="_" href="https://www.booking.com/hotel/ie/the-point-inn.en-gb.html?aid=356930;label=metagha-link-localuniversalGB-hotel-4913067_dev-desktop_los-1_bw-57_dow-Saturday_defdate-0_room-0_lang-en_curr-GBP_gstadt-2_rateid-0_aud-0_cid-_gacid-6623578758_mcid-10;sid=376da4c5711e5380aaff34a4749e0641;all_sr_blocks=491306704_204714711_2_1_0;checkin=2020-03-21;checkout=2020-03-22;dest_id=-1501434;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=491306704_204714711_2_1_0;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=491306704_204714711_2_1_0__8000;srepoch=1579855344;srpvid=6b7d3d3893e6001b;type=total;ucfs=1&#hotelTmpl"><img src="assets/svg/info.svg" class="h-8 w-auto" alt="Go on Online to Book" /></a>
+              </div>
+            </header>
+            <p class="text-sm mb-4">B&B only 4 mins away</p>
+
+            <div class="text-sm">
+              The Point Inn, Carrowkeel, Quigley's Point, Co. Donegal, F93 DK84, Ireland
+            </div>
+          </div>
+          <!-- Accom End -->
+          <!-- Accom Start -->
+          <div class="bg-gray-800 p-4 rounded-lg mb-8">
+            <header class="flex items-center justify-between">
+              <h4 class="font-bold">The Meadows</h4>
+              <div class="flex">
+                <a target="_" href="tel:00353749383579"><img src="assets/svg/phone.svg" class="h-8 w-auto" alt="Phone to Book" /></a>
+                <a class="ml-4"target="_" href="https://www.booking.com/hotel/ie/the-meadows-b-amp-b.en-gb.html?aid=340296;label=metatrivago-hotel-575593_xqdz-42390e229f7d530a6e237aff1646e181_los-1_nrm-1_gstadt-2_gstkid-0_curr-gbp_lang-en-gb_itt-0_mcid-10_losb-1_bw-13_bwb-8_trvbm-a_split-47296a_defdate-0_trvref-51532a5f-6744-4fb3-9edd-d52f108de1da;sid=d2c8f5a0b8dc75dd4ec30d287196fabb;all_sr_blocks=57559305_164636346_0_1_0;checkin=2020-02-04;checkout=2020-02-05;dest_id=-1504685;dest_type=city;dist=0;from_beach_key_ufi_sr=1;group_adults=2;group_children=0;hapos=1;highlighted_blocks=57559305_164636346_0_1_0;hpos=1;matching_block_id=57559305_164636346_2_1_0;no_rooms=1;ref_is_wl=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=57559305_164636346_0_1_0__7050;srepoch=1579733028;srpvid=7e099fd25f210052;type=total;ucfs=1&#map_closed"><img src="assets/svg/info.svg" class="h-8 w-auto" alt="Go on Online to Book" /></a>
+              </div>
+            </header>
+            <p class="text-sm mb-4">B&B only 6 mins away</p>
+
+            <div class="text-sm">
+              2 Foyleview, Carrowkeel, Quigley's Point, Co. Donegal, F93 DP38, Ireland
+            </div>
+          </div>
+          <!-- Accom End -->
+          <!-- Accom Start -->
+          <div class="bg-gray-800 p-4 rounded-lg mb-8">
+            <header class="flex items-center justify-between">
+              <h4 class="font-bold">Inishowen Lodge</h4>
+              <div class="flex">
+                <a target="_" href="tel:00353749385653"><img src="assets/svg/phone.svg" class="h-8 w-auto" alt="Phone to Book" /></a>
+                <a class="ml-4"target="_" href="https://www.priceline.com/relax/at/25035506/from/20200321/to/20200322/rooms/1?pclnId=44ED6A1B625D9EE60B249472392BDD4843E91361E1C78FE84813FEE08120505D5B1B86E1B7E7F92441E981B6E897863D124E8190356286D183520BE009A2ECB235D7868445BA04B0&qdp=50&cur=GBP&gid=2076&cug=false&cityId=5000155890"><img src="assets/svg/info.svg" class="h-8 w-auto" alt="Go on Online to Book" /></a>
+              </div>
+            </header>
+            <p class="text-sm mb-4">B&B only 6 mins away</p>
+
+            <div class="text-sm">
+              Ballyrattan Road, Ballyrattan, Moville, Co. Donegal, F93 W427, Ireland
+            </div>
+          </div>
+          <!-- Accom End -->
+          <!-- Accom Start -->
+          <div class="bg-gray-800 p-4 rounded-lg mb-8">
+            <header class="flex items-center justify-between">
+              <h4 class="font-bold">Ballinaloob House</h4>
+              <div class="flex">
+                <a class="ml-4"target="_" href="https://www.booking.com/hotel/ie/ballinaloob-house.en-gb.html?aid=340296;label=metatrivago-hotel-575593_xqdz-42390e229f7d530a6e237aff1646e181_los-1_nrm-1_gstadt-2_gstkid-0_curr-gbp_lang-en-gb_itt-0_mcid-10_losb-1_bw-13_bwb-8_trvbm-a_split-47296a_defdate-0_trvref-51532a5f-6744-4fb3-9edd-d52f108de1da;sid=d2c8f5a0b8dc75dd4ec30d287196fabb;all_sr_blocks=324188001_114713025_2_1_0;checkin=2020-02-04;checkout=2020-02-05;dest_id=-1504685;dest_type=city;dist=0;from_beach_key_ufi_sr=1;group_adults=2;group_children=0;hapos=8;highlighted_blocks=324188001_114713025_2_1_0;hpos=8;matching_block_id=324188001_114713025_2_1_0;no_rooms=1;ref_is_wl=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=324188001_114713025_2_1_0__7500;srepoch=1579733134;srpvid=6cd9a0070335008c;type=total;ucfs=1&"><img src="assets/svg/info.svg" class="h-8 w-auto" alt="Go on Online to Book" /></a>
+              </div>
+            </header>
+            <p class="text-sm mb-4">B&B only 8 mins away</p>
+
+            <div class="text-sm">
+              Donegal Gulladuff Moville, F93F2X9 Moville, Ireland
+            </div>
+          </div>
+          <!-- Accom End -->
+        </aside>
+      </div>
+    </section>
+    
+    <!-- Wedding List -->
+    <section id="weddinglist" class="bg-sc">
+      <section class="[ container mx-auto px-8 pt-10 pb-16 ][ text-center ]">
+        <h2 class="font-sc-heading font-medium text-3xl mb-4">Wedding List</h2>
+        <p class="mb-4 max-w-lg mx-auto">If you are thinking of wedding gift ideas, we have prepared a small wedding list in Noone's, Maghera. </p>
+        <p class="mb-4 max-w-lg mx-auto">You can see our wedding list online now:</p>
+        <a href="https://noonesofmaghera.co.uk/product/gift_list?list_id=65" target="_blank" class="inline-block bg-gray-900 hover:bg-gray-800 text-white font-bold px-4 py-2 rounded-lg shadow">Noones of Maghera</a>
+      </section>
+    </section>
+ 
+    <!-- Day Two -->
+
+    <section class="[ container mx-auto px-8 py-16 ]">
+      <div class="[ md:flex ][ -mx-4 ]">
+        <article class="[ flex flex-col flex-1 ][ px-4 mb-10 sm:mb-0 ]">
+          <h2 class="font-sc-heading font-medium text-3xl mb-4">Day Two</h2>
+          <p class="max-w-sm mb-4">
+            The party continues on day two, and we hope you can join us at 7pm in Marrions Bar, Randalstown. Food, drink and plenty of craic will be provided so everyone is welcome! <a target="_blank" class="text-sc hover:bg-sc hover:text-white border-b-2 border-sc" href="https://www.google.com/maps?q=marrions+bar+randalstown&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj7lIKe-pvnAhWOQkEAHVpDA2MQ_AUoAXoECBIQAw">Click here for directions</a></p>
+          
+          <p class="max-w-sm mb-4">We cannot wait to share the most important day in our lives with you all.
+
+            <p class="max-w-sm mb-4">See you on the 21st of March!</p>
+            
+              <p class="max-w-sm mb-4">Love,</p>
+            
+                <p class="max-w-sm mb-4">Shauna & Conor</p>
+        </article>
+        <aside class="flex-1 px-4">
+          <a target="_blank" class="block relative w-full aspect-square rounded-lg shadow bg-cover bg-no-repeat mb-16 md:mb-0" style="background-image: url('assets/marrions.jpg');" href="https://www.google.com/maps?q=marrions+bar+randalstown&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj7lIKe-pvnAhWOQkEAHVpDA2MQ_AUoAXoECBIQAw">
+            <span class="absolute top-0 right-0 p-4 text-right font-bold">Marrion's Bar, Randalstown<span class="text-sm block font-medium">Click for Directions</span></span>
+          </a>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="flex items-center justify-center py-16">
+      <img
+          src="assets/icon.png"
+          alt="Shauna & Conor"
+          class="block w-32 mb-4"
+        />
+    </footer>
+
   </body>
 </html>

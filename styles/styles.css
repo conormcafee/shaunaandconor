@@ -21,6 +21,26 @@
   );
 }
 
+.font-sc-heading {
+  font-family: "Playfair Display", serif;
+}
+
 .font-sc {
   font-family: "Raleway", sans-serif;
+}
+
+.aspect-square {
+  padding-top: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .shift-image {
+    transform: translate(-10%, -10%);
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .shift-image {
+    transform: translate(-75%, -25%);
+  }
 }
