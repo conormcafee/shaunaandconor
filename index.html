@@ -19,19 +19,19 @@
           class="[ flex items-center justify-center sm:justify-end ][ font-medium ][ w-full ]"
         >
           <a
-            href="#"
+            href="#directions"
             class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-0 sm:ml-4"
             >Directions</a
           >
           <a
-            href="#"
-            class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-4"
-            ><span class="hidden sm:inline-block">Wedding</span> List</a
-          >
-          <a
-            href="#"
+            href="#accommodation"
             class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-4"
             >Accomodation</a
+          >
+          <a
+            href="#weddinglist"
+            class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-4"
+            ><span class="hidden sm:inline-block">Wedding</span> List</a
           >
         </nav>
       </div>
@@ -127,7 +127,7 @@
 
     <!-- Directions -->
 
-    <section class="[ container mx-auto px-8 pb-16 ]">
+    <section id="directions" class="[ container mx-auto px-8 pb-16 ]">
       <div class="[ md:flex ][ -mx-4 ]">
         <article class="[ flex flex-col flex-1 ][ px-4 mb-10 sm:mb-0 ]">
           <h2 class="font-sc-heading font-medium text-3xl mb-4">Directions</h2>
@@ -150,7 +150,7 @@
 
     <!-- Accomodation -->
 
-    <section class="[ container mx-auto px-8 pb-16 ]">
+    <section id="accommodation" class="[ container mx-auto px-8 pb-16 ]">
       <div class="[ md:flex ][ -mx-4 ]">
         <article class="[ flex flex-col flex-1 ][ px-4 mb-10 sm:mb-0 ]">
           <h2 class="font-sc-heading font-medium text-3xl mb-4">Accommodation</h2>
@@ -242,5 +242,49 @@
         </aside>
       </div>
     </section>
+    
+    <!-- Wedding List -->
+    <section id="weddinglist" class="bg-sc">
+      <section class="[ container mx-auto px-8 pt-10 pb-16 ][ text-center ]">
+        <h2 class="font-sc-heading font-medium text-3xl mb-4">Wedding List</h2>
+        <p class="mb-4 max-w-lg mx-auto">If you are thinking of wedding gift ideas, we have prepared a small wedding list in Noone's, Maghera. </p>
+        <p class="mb-4 max-w-lg mx-auto">You can see our wedding list online now:</p>
+        <a href="https://noonesofmaghera.co.uk/product/gift_list?list_id=65" target="_blank" class="inline-block bg-gray-900 hover:bg-gray-800 text-white font-bold px-4 py-2 rounded-lg shadow">Noones of Maghera</a>
+      </section>
+    </section>
+ 
+    <!-- Day Two -->
+
+    <section class="[ container mx-auto px-8 py-16 ]">
+      <div class="[ md:flex ][ -mx-4 ]">
+        <article class="[ flex flex-col flex-1 ][ px-4 mb-10 sm:mb-0 ]">
+          <h2 class="font-sc-heading font-medium text-3xl mb-4">Day Two</h2>
+          <p class="max-w-sm mb-4">
+            The party continues on day two, and we hope you can join us at 7pm in Marrions Bar, Randalstown. Food, drink and plenty of craic will be provided so everyone is welcome! <a target="_blank" class="text-sc hover:bg-sc hover:text-white border-b-2 border-sc" href="https://www.google.com/maps?q=marrions+bar+randalstown&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj7lIKe-pvnAhWOQkEAHVpDA2MQ_AUoAXoECBIQAw">Click here for directions</a></p>
+          
+          <p class="max-w-sm mb-4">We cannot wait to share the most important day in our lives with you all.
+
+            <p class="max-w-sm mb-4">See you on the 21st of March!</p>
+            
+              <p class="max-w-sm mb-4">Love,</p>
+            
+                <p class="max-w-sm mb-4">Shauna & Conor</p>
+        </article>
+        <aside class="flex-1 px-4">
+          <a target="_blank" class="block relative w-full aspect-square rounded-lg shadow bg-cover bg-no-repeat mb-16 md:mb-0" style="background-image: url('assets/marrions.jpg');" href="https://www.google.com/maps?q=marrions+bar+randalstown&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj7lIKe-pvnAhWOQkEAHVpDA2MQ_AUoAXoECBIQAw">
+            <span class="absolute top-0 right-0 p-4 text-right font-bold">Marrion's Bar, Randalstown<span class="text-sm block font-medium">Click for Directions</span></span>
+          </a>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="flex items-center justify-center py-16">
+      <img
+          src="assets/icon.png"
+          alt="Shauna & Conor"
+          class="block w-32 mb-4"
+        />
+    </footer>
+
   </body>
 </html>
