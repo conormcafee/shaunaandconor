@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body class="[ bg-gray-900 ][ font-sc ]">
-    <header class="[ border-t-8 border-sc ][ fixed right-0 left-0 ][ z-20 ]">
+  <body class="[ bg-gray-900 text-white ][ font-sc ][ relative ]">
+    <header class="[ border-t-8 border-sc ][ absolute right-0 left-0 ][ z-20 ]">
       <div
         class="[ flex flex-col sm:flex-row items-center justify-between ][ py-4 px-2 ][ container mx-auto ]"
       >
@@ -23,39 +23,106 @@
         >
           <a
             href="#"
-            class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-0 sm:ml-2"
+            class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-0 sm:ml-4"
             >Directions</a
           >
           <a
             href="#"
-            class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-2"
+            class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-4"
             ><span class="hidden sm:inline-block">Wedding</span> List</a
           >
           <a
             href="#"
-            class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-2"
+            class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-4"
             >Accomodation</a
           >
         </nav>
       </div>
     </header>
     <section
-      class="[ flex flex-col items-center justify-center ][ h-screen relative ][ bg-overlay bg-cover bg-no-repeat ]"
+      class="[ h-screen relative ][ bg-overlay bg-cover bg-no-repeat ]"
       style="background-image: url('assets/redcastle.jpg');"
     >
-      <div class="[ container mx-auto px-8 ][ text-white ]">
-        <div class="[ h-full ][ relative z-10 ]">
-          <figure>
-            <img
-              src="assets/shauna-and-conor.png"
-              alt="Shauna & Conor"
-              class="md:max-w-3xl mx-auto"
-            />
-            <figcaption class="font-medium uppercase tracking-wide text-center">
-              Saturday 21st March 2020
-            </figcaption>
-          </figure>
-        </div>
+      <div
+        class="[ container mx-auto px-8 ][ flex flex-col items-center justify-center ][ text-white ][ flex-1 h-full ][ relative z-10 ]"
+      >
+        <figure>
+          <img
+            src="assets/shauna-and-conor.png"
+            alt="Shauna & Conor"
+            class="md:max-w-3xl mx-auto"
+          />
+          <figcaption class="font-medium uppercase tracking-wide text-center">
+            Saturday 21st March 2020
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+ 
+    <section class="[ container mx-auto px-8 pb-16 ]">
+      <div class="[ sm:flex ][ -mx-4 ]">
+        <article class="[ flex flex-col sm:items-end flex-1 ][ px-4 mb-10 sm:mb-0 ][ sm:text-right ]">
+          <p class="max-w-sm mb-4">
+            Our wedding venue is in the picturesque Redcastle Oceanfront Golf &
+            Spa Hotel, Moville, Co. Donegal. We hope you will love it as much as
+            we do.</p>
+            
+            <p class="max-w-sm mb-4">We have decided to put together this website to give you and
+            insight into the final details of our special day. We hope that this
+            will make your planning a little easier.</p>
+          </p>
+        </article>
+        <aside class="flex-1 px-4">
+          <ul>
+            <li class="flex mb-4">
+              <img src="assets/svg/ring.svg" alt="Ceremony at 12 noon, St.Trea’s Church, Newbridge" />
+              <div class="flex flex-col ml-4">
+                <span class="font-medium">12 noon</span>
+                <span class="text-sm">Ceremony, St.Trea’s Church, Newbridge</span>
+              </div>
+            </li>
+
+            <li class="flex mb-4">
+              <img src="assets/svg/drinks.svg" alt="Drinks Reception at 3pm in the Redcastle Hotel" />
+              <div class="flex flex-col ml-4">
+                <span class="font-medium">3pm</span>
+                <span class="text-sm">Drinks Reception at the Redcastle Hotel</span>
+              </div>
+            </li>
+            
+            <li class="flex mb-4">
+              <img src="assets/svg/speeches.svg" alt="Speeches at 5pm" />
+              <div class="flex flex-col ml-4">
+                <span class="font-medium">5pm</span>
+                <span class="text-sm">Speeches</span>
+              </div>
+            </li>
+
+            <li class="flex mb-4">
+              <img src="assets/svg/menu.svg" alt="Dinner at 5.30pm" />
+              <div class="flex flex-col ml-4">
+                <span class="font-medium">5.30pm</span>
+                <span class="text-sm">Dinner</span>
+              </div>
+            </li>
+            
+            <li class="flex mb-4">
+              <img src="assets/svg/married.svg" alt="Mr and Mrs McCann’s first dance at 8pm" />
+              <div class="flex flex-col ml-4">
+                <span class="font-medium">8pm</span>
+                <span class="text-sm">Mr and Mrs McCann’s first dance</span>
+              </div>
+            </li>
+            
+            <li class="flex mb-4">
+              <img src="assets/svg/music.svg" alt="The party begins at 8.30pm" />
+              <div class="flex flex-col ml-4">
+                <span class="font-medium">8.30pm</span>
+                <span class="text-sm">The party begins</span>
+              </div>
+            </li>
+          </ul>
+        </aside>
       </div>
     </section>
   </body>
