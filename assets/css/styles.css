@@ -11512,18 +11512,21 @@ video {
   padding-top: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 919px) {
   .shift-image {
-    -webkit-transform: translate(-10%, -10%);
-            transform: translate(-10%, -10%);
+    margin-top: 40px;
   }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 920px) {
   .shift-image {
-    -webkit-transform: translate(-75%, -25%);
-            transform: translate(-75%, -25%);
+    -webkit-transform: translate(-50%, -20%);
+            transform: translate(-50%, -20%);
   }
+}
+
+.sc-container {
+  max-width: 1000px;
 }
 
 @media (min-width: 640px) {

@@ -4,19 +4,26 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:500|Raleway:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body class="[ bg-gray-900 text-white ][ font-sc ][ relative ][ antialiased ]">
-    <header class="[ border-t-8 border-sc ][ absolute right-0 left-0 ][ z-20 ]">
+    <header class="[ border-t-4 border-sc ][ absolute right-0 left-0 ][ z-20 ][ px-8 ]">
       <div
-        class="[ flex flex-col sm:flex-row items-center justify-between ][ py-4 px-2 ][ container mx-auto ]"
+        class="[ flex flex-col md:flex-row items-center justify-between ][ py-4 px-2 ][ sc-container mx-auto ]"
       >
         <img
           src="assets/icon.png"
           alt="Shauna & Conor"
-          class="block w-20 mb-4"
+          class="block w-20 mb-2 sm:mb-4 md:mb-0"
         />
         <nav
-          class="[ flex items-center justify-center sm:justify-end ][ font-medium ][ w-full ]"
+          class="[ flex items-center justify-center md:justify-end ][ font-medium ][ w-full ]"
         >
           <a
             href="#directions"
@@ -26,30 +33,34 @@
           <a
             href="#accommodation"
             class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-4"
-            >Accomodation</a
+            >Accom<span class="inline-block sm:hidden">.</span><span class="hidden sm:inline-block">odation</span></a
           >
           <a
             href="#weddinglist"
             class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-4"
             ><span class="hidden sm:inline-block">Wedding</span> List</a
           >
+          <a
+            href="#daytwo"
+            class="text-xs sm:text-base text-white hover:text-sc uppercase tracking-wider ml-4"
+            >Day <span class="inline-block sm:hidden">2</span><span class="hidden sm:inline-block">Two</span></a>
         </nav>
       </div>
     </header>
     <section
-      class="[ h-screen relative ][ bg-overlay bg-cover bg-no-repeat ]"
+      class="[ h-screen relative ][ bg-overlay bg-cover bg-right bg-no-repeat ]"
       style="background-image: url('assets/redcastle.jpg');"
     >
       <div
-        class="[ container mx-auto px-8 ][ flex flex-col items-center justify-center ][ text-white ][ flex-1 h-full ][ relative z-10 ]"
+        class="[ sc-container mx-auto px-8 ][ flex flex-col items-center justify-center ][ text-white ][ flex-1 h-full ][ relative z-10 ]"
       >
         <figure>
           <img
             src="assets/shauna-and-conor.png"
             alt="Shauna & Conor"
-            class="md:max-w-3xl mx-auto"
+            class="md:max-w-2xl mx-auto"
           />
-          <figcaption class="font-medium uppercase tracking-wide text-center">
+          <figcaption class="text-lg font-medium uppercase tracking-wide text-center">
             Saturday 21st March 2020
           </figcaption>
         </figure>
@@ -58,7 +69,7 @@
     
     <!-- Introduction -->
 
-    <section class="[ container mx-auto px-8 pb-16 ]">
+    <section class="[ sc-container mx-auto px-8 pb-16 ]">
       <div class="[ sm:flex ][ -mx-4 ]">
         <article class="[ flex flex-col sm:items-end flex-1 ][ px-4 mb-10 sm:mb-0 ][ sm:text-right ]">
           <p class="max-w-sm mb-4">
@@ -127,7 +138,7 @@
 
     <!-- Directions -->
 
-    <section id="directions" class="[ container mx-auto px-8 pb-16 ]">
+    <section id="directions" class="[ sc-container mx-auto px-8 pb-16 ]">
       <div class="[ md:flex ][ -mx-4 ]">
         <article class="[ flex flex-col flex-1 ][ px-4 mb-10 sm:mb-0 ]">
           <h2 class="font-sc-heading font-medium text-3xl mb-4">Directions</h2>
@@ -138,10 +149,10 @@
           </p>
         </article>
         <aside class="flex-1 px-4">
-          <a target="_blank" class="block relative w-full aspect-square rounded-lg shadow bg-cover bg-no-repeat mb-16 md:mb-0" style="background-image: url('assets/chapel.jpg');" href="https://www.google.com/maps/place/St.+Treas+Chapel/@54.7528283,-6.528001,15z/data=!4m2!3m1!1s0x0:0xd943744aaa0c0c25?sa=X&ved=2ahUKEwiftqSz9JvnAhXxRxUIHQhQCsoQ_BIwFnoECAoQCA">
+          <a target="_blank" class="block relative w-full aspect-square rounded-lg shadow bg-cover bg-no-repeat mb-16 lg:mb-0" style="background-image: url('assets/chapel.jpg');" href="https://www.google.com/maps/place/St.+Treas+Chapel/@54.7528283,-6.528001,15z/data=!4m2!3m1!1s0x0:0xd943744aaa0c0c25?sa=X&ved=2ahUKEwiftqSz9JvnAhXxRxUIHQhQCsoQ_BIwFnoECAoQCA">
             <span class="absolute top-0 right-0 p-4 text-right font-bold">St.Trea’s Church<span class="text-sm block font-medium">Click for Directions</span></span>
           </a>
-          <a target="_blank" class="block relative w-full aspect-square rounded-lg shadow bg-cover bg-no-repeat shift-image" style="background-image: url('assets/redcastle.jpg');" href="https://www.google.com/maps/dir/133,+St.+Treas+Chapel,+137+Aughrim+Rd,+Magherafelt+BT45+8HB/Redcastle+Hotel,+Inishowen+Peninusla,+Redcastle,+County+Donegal,+Ireland/@54.9566573,-7.1963717,10z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x48605ae54ea8c3cd:0xd943744aaa0c0c25!2m2!1d-6.528001!2d54.7528283!1m5!1m1!1s0x485f0714d2f07703:0x746358babccb62b2!2m2!1d-7.122708!2d55.1587991">
+          <a target="_blank" class="block relative w-full aspect-square rounded-lg shadow bg-cover bg-center bg-no-repeat shift-image" style="background-image: url('assets/redcastle-hotel-1.jpg');" href="https://www.google.com/maps/dir/133,+St.+Treas+Chapel,+137+Aughrim+Rd,+Magherafelt+BT45+8HB/Redcastle+Hotel,+Inishowen+Peninusla,+Redcastle,+County+Donegal,+Ireland/@54.9566573,-7.1963717,10z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x48605ae54ea8c3cd:0xd943744aaa0c0c25!2m2!1d-6.528001!2d54.7528283!1m5!1m1!1s0x485f0714d2f07703:0x746358babccb62b2!2m2!1d-7.122708!2d55.1587991">
             <span class="absolute top-0 right-0 p-4 text-right font-bold">Redcastle Hotel<span class="text-sm block font-medium">Click for Directions</span></span>
           </a>
         </aside>
@@ -150,7 +161,7 @@
 
     <!-- Accomodation -->
 
-    <section id="accommodation" class="[ container mx-auto px-8 pb-16 ]">
+    <section id="accommodation" class="[ sc-container mx-auto px-8 pb-16 ]">
       <div class="[ md:flex ][ -mx-4 ]">
         <article class="[ flex flex-col flex-1 ][ px-4 mb-10 sm:mb-0 ]">
           <h2 class="font-sc-heading font-medium text-3xl mb-4">Accommodation</h2>
@@ -244,18 +255,18 @@
     </section>
     
     <!-- Wedding List -->
-    <section id="weddinglist" class="bg-sc">
-      <section class="[ container mx-auto px-8 pt-10 pb-16 ][ text-center ]">
+    <section id="weddinglist" class="bg-white text-gray-900">
+      <section class="[ sc-container mx-auto px-8 pt-10 pb-16 ][ text-center ]">
         <h2 class="font-sc-heading font-medium text-3xl mb-4">Wedding List</h2>
         <p class="mb-4 max-w-lg mx-auto">If you are thinking of wedding gift ideas, we have prepared a small wedding list in Noone's, Maghera. </p>
         <p class="mb-4 max-w-lg mx-auto">You can see our wedding list online now:</p>
-        <a href="https://noonesofmaghera.co.uk/product/gift_list?list_id=65" target="_blank" class="inline-block bg-gray-900 hover:bg-gray-800 text-white font-bold px-4 py-2 rounded-lg shadow">Noones of Maghera</a>
+        <a href="https://noonesofmaghera.co.uk/product/gift_list?list_id=65" target="_blank" class="inline-block bg-sc hover:bg-gray-800 text-white font-bold px-4 py-2 rounded-lg shadow">Noones of Maghera</a>
       </section>
     </section>
  
     <!-- Day Two -->
 
-    <section class="[ container mx-auto px-8 py-16 ]">
+    <section id="daytwo" class="[ sc-container mx-auto px-8 py-16 ]">
       <div class="[ md:flex ][ -mx-4 ]">
         <article class="[ flex flex-col flex-1 ][ px-4 mb-10 sm:mb-0 ]">
           <h2 class="font-sc-heading font-medium text-3xl mb-4">Day Two</h2>
@@ -268,21 +279,21 @@
             
               <p class="max-w-sm mb-4">Love,</p>
             
-                <p class="max-w-sm mb-4">Shauna & Conor</p>
+                <p class="max-w-sm mb-4 [ font-sc-heading font-medium text-3xl ]">Shauna & Conor</p>
         </article>
         <aside class="flex-1 px-4">
-          <a target="_blank" class="block relative w-full aspect-square rounded-lg shadow bg-cover bg-no-repeat mb-16 md:mb-0" style="background-image: url('assets/marrions.jpg');" href="https://www.google.com/maps?q=marrions+bar+randalstown&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj7lIKe-pvnAhWOQkEAHVpDA2MQ_AUoAXoECBIQAw">
+          <a target="_blank" class="block relative w-full aspect-square rounded-lg shadow bg-cover bg-no-repeat mb-16 md:mb-0" style="background-image: url('assets/marrions-new.jpg');" href="https://www.google.com/maps?q=marrions+bar+randalstown&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj7lIKe-pvnAhWOQkEAHVpDA2MQ_AUoAXoECBIQAw">
             <span class="absolute top-0 right-0 p-4 text-right font-bold">Marrion's Bar, Randalstown<span class="text-sm block font-medium">Click for Directions</span></span>
           </a>
         </aside>
       </div>
     </section>
 
-    <footer class="flex items-center justify-center py-16">
+    <footer class="flex items-center justify-center pt-16 pb-32">
       <img
           src="assets/icon.png"
           alt="Shauna & Conor"
-          class="block w-32 mb-4"
+          class="block w-32"
         />
     </footer>
 
